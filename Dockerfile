@@ -9,7 +9,7 @@ WORKDIR /app
 RUN apk update && apk upgrade
 
 COPY ./package.json .
-COPY ./yarn.lock .
+COPY ./package-lock.json .
 
 RUN npm install
 
@@ -22,4 +22,5 @@ RUN chown -R node /app
 USER node
 
 EXPOSE $NODE_PORT
+
 CMD ["npm", "run", "start"]

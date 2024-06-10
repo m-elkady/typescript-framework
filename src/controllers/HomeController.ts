@@ -19,7 +19,7 @@ export default class HomeController implements Controller {
   public async index(req: Request, res: Response): Promise<void> {
     try {
       // Your controller logic goes here
-      res.status(200).json({message: 'Hello, world!'});
+      res.status(200).json({message: 'Welcome to Typescript Framework!'});
     } catch (error) {
       console.error(error);
       res.status(500).json({error: 'Internal server error'});
