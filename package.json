@@ -1,0 +1,25 @@
+{
+  "name": "momentfyserver",
+  "version": "1.0.0",
+  "description": "momentfy server app",
+  "main": "index.js",
+  "author": "Mohammed Elkady",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon",
+    "build": "tsc"
+  },
+  "dependencies": {
+    "@types/mysql": "^2.15.21",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "mysql": "^2.18.1"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.17",
+    "@types/node": "^20.2.5",
+    "nodemon": "^2.0.22",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.1.3"
+  }
+}
